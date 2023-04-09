@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testcases.NewTest">
+        <methods>
+          <include name="first_test"/>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- testcases.NewTest -->
+      <class name="testcases.TestingCSRF">
+        <methods>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+          <include name="storedXSS"/>
+          <include name="nextPage"/>
+          <include name="first_test"/>
+        </methods>
+      </class> <!-- testcases.TestingCSRF -->
+      <class name="testcases.TestingXSS">
+        <methods>
+          <include name="storedXSS"/>
+          <include name="open_browser"/>
+          <include name="close_browser"/>
+          <include name="first_test"/>
+        </methods>
+      </class> <!-- testcases.TestingXSS -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
