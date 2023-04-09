@@ -24,6 +24,7 @@ public class NewTest {
 		  
 		  Assert.assertTrue(driver.getTitle().contains("XSS game"));
 		 // driver.close();
+		  
 
 	  }
 	  
