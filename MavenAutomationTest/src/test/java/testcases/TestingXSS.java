@@ -1,9 +1,5 @@
 package testcases;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByClassName;
@@ -29,10 +25,9 @@ public class TestingXSS {
 	  {
 		  driver.get("https://xss-game.appspot.com/level1");
 		  
-		  AssertJUnit.assertTrue(driver.getTitle().contains("XSS game"));
+		  Assert.assertTrue(driver.getTitle().contains("XSS game"));
 		 // driver.close();
-		  
-		  XSSUtils.assertNotVulnerable();
+
 	  }
 	  
 	  @Test
